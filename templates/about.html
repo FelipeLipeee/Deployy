@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim - Felipe Guarnieri Pinete</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px #068cf4;
+            margin-bottom: 20px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card p {
+            margin: 0;
+            text-align: justify;
+        }
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .highlight {
+            color: #3498db;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sobre Mim</h1>
+        <div class="cards-container">
+            <div class="card">
+                <p>
+                    <h3>Quem sou eu?</h3>
+                    Olá! Meu nome é <span class="highlight">Felipe Guarnieri Pinete</span>, um estudante apaixonado por tecnologia e desenvolvimento de software. Atualmente, estou cursando o quarto semestre de Ciências da Computação, onde venho consolidando meu conhecimento em várias áreas da computação.
+                </p>
+            </div>
+            <div class="card">
+                <p>
+                    <h3>Minha jornada</h3>
+                    Minha jornada no mundo da programação começou com o <span class="highlight">Python</span>, uma linguagem que me permitiu desenvolver uma base sólida em lógica de programação. Mais recentemente, venho expandindo meus conhecimentos para outras linguagens e tecnologias, como <span class="highlight">Java</span>, HTML, CSS e JavaScript. Cada novo aprendizado é uma oportunidade para crescer e me preparar para os desafios do mercado de trabalho.
+                </p>
+            </div>
+            <div class="card">
+                <p>
+                    <h3>Conquistas</h3>
+                    Uma das minhas maiores conquistas até agora foi o desenvolvimento de um <span class="highlight">sistema de e-commerce</span> completo, utilizando MySQL para gerenciar o banco de dados. Esse projeto me permitiu aplicar na prática tudo o que aprendi sobre design e implementação de sistemas, além de me proporcionar uma visão clara dos desafios reais que enfrentarei como desenvolvedor.
+                </p>
+            </div>
+            <div class="card">
+                <p>
+                    <h3>Portifólio</h3>
+                    Além disso, estou desenvolvendo um <span class="highlight">portfólio pessoal</span>, onde posso mostrar meu trabalho e habilidades. Esse portfólio é uma forma de me conectar com potenciais empregadores e clientes, demonstrando meu comprometimento com a qualidade e inovação.
+                </p>
+            </div>
+            <div class="card">
+                <p>
+                    <h3>Objetivo Principal</h3>
+                    Meu objetivo principal é me tornar um <span class="highlight">desenvolvedor backend</span> altamente qualificado, capaz de criar soluções robustas e eficientes. Estou constantemente buscando novas oportunidades para aprender e crescer, e acredito que, com dedicação e perseverança, posso alcançar qualquer objetivo que eu estabelecer para mim.
+                </p>
+            </div>
+            <div class="card">
+                <p>
+                    <h3>Extras</h3>
+                    Fora da área técnica, também me dedico ao meu desenvolvimento pessoal. Tenho trabalhado na melhoria da minha <span class="highlight">mobilidade, flexibilidade e força</span> através da prática regular de calistenia. Equilibrar corpo e mente é essencial para manter o foco e a produtividade em alta.
+                </p>
+            </div>
+            <div class="card">
+                <p>
+                    <h3>Venha falar comigo!!</h3>
+                    Estou ansioso para ver onde essa jornada me levará e estou sempre aberto a novos desafios e oportunidades. Se você quiser saber mais sobre mim ou discutir algum projeto, fique à vontade para entrar em contato!
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

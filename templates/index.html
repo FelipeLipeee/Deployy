@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Felipe Guarnieri Pinete</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <img src="static/selfie.jpg" alt="Foto de Felipe Guarnieri Pinete" class="minha-foto-header">
+            <div class="header-text">
+                <h1>Felipe Guarnieri Pinete</h1>
+                <p>Estudante de Ciências da Computação - 4º Semestre</p>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="about">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+        </div>
+    </section>
+
+    <section id="featured-card">
+        <div class="card">
+            <div class="card-info">
+                <h3>Minha História</h3>
+                <p>Sou um estudante apaixonado por tecnologia e desenvolvimento de software.
+                    Estou no quarto semestre de Ciências da Computação
+                    e estou sempre em busca de novos desafios para expandir meus conhecimentos.</p>
+                <a href="{{ url_for('about') }}" class="card-button">Sobre Mim</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projetos</h2>
+        </div>
+    </section>
+
+    <section id="card-slider" class="card-slider">
+    <div class="slider-background">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-info">
+                    <h3>Controle de Estoque</h3>
+                    <p>Um pequeno trabalho de três universitários,
+                        com o objetivo de fazer um programa simples
+                        para controle de estoque em Python.</p>
+                    <a href="https://github.com/Taiwansz/ThLoop-Fst" class="card-button">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="static/fita.jpg" width="300" height="400" alt="Descrição da Imagem">
+
+                <div class="card-info">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição breve.</p>
+                    <a href="https://aaaaaa.com" class="card-button">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="static/fita.jpg" width="300" height="400" alt="Descrição da Imagem">
+                <div class="card-info">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição breve.</p>
+                    <a href="https://aaaa.com" class="card-button">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="static/fita.jpg" width="300" height="400" alt="Descrição da Imagem">
+                <div class="card-info">
+                    <h3>Projeto 4</h3>
+                    <p>Descrição breve.</p>
+                    <a href="https://aaaaaaa.com" class="card-button">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contato</h2>
+        </div>
+    </section>
+    <section id="contact-card">
+        <div>
+            <p>Email: <a href="mailto:felipe.pinete337@al.unieduk.com.br">
+                felipe.pinete337@al.unieduk.com.br</a></p>
+        </div>
+        <div>
+            <p>GitHub: <a href="https://github.com/FelipeLipeee">Clique Aqui.</a></p>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Felipe Guarnieri Pinete</p>
+        </div>
+    </footer>
+</body>
+
+</html>
